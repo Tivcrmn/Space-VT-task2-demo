@@ -23,7 +23,7 @@ The features which have been finished
 
 [Live Demo is here](http://tivarea.top/demo/client/index.html)
 
-![](http://oz2vajvam.bkt.clouddn.com/space@vt.png)
+![](http://oz2vajvam.bkt.clouddn.com/new_space_vt.png)
 
 How to run?
 
@@ -31,13 +31,12 @@ How to run?
 # clone the repo to your pc and cd the directory
 git clone https://github.com/Tivcrmn/Space-VT-task2-demo.git
 
-# install dependencies on the server
+# install dependencies both on the client and server
 npm install
 
-# server run at localhost:5000
+# client run at localhost:8080 and server run at localhost:5000
 npm run dev
 
-open the client/index.html
 ```
 
 ### Tech Stacks

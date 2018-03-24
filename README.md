@@ -46,7 +46,7 @@ The features which have been finished
  
 [Live Demo](http://tivarea.top/demo/client/index.html)
 
-![](http://oz2vajvam.bkt.clouddn.com/space@vt.png)
+![](http://oz2vajvam.bkt.clouddn.com/new_space_vt.png)
 
 ### Architecture
 
