@@ -1,124 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Space@VT demo</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-	<link href="./style.css" rel="stylesheet" type="text/css" /> 
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <title>Space@VT demo</title>
+    <link href="./src/style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="description">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1>Space@VT task2 demo by Tivcrmn</h1>
+          <h5>Analyzing Interplanetary Magnetic Field (IMF) data from OMNI. <span class="red">from 2011 to 2017</span></h5>
+          <p>
+            IMF is the Sun’s magnetic field carried by the solarwind into the interplanetary space. IMF plays an important role in transferring energy into the Earth’s atmosphere and generating the northern lights (aurora). IMF data is available for download from NASA’s OMNI database.
+            <br>
+            Students can work on a variety of demo projects using IMF.
+            <br>
+            For example:
+            <br>
+            1. develop a real time IMF monitoring tool.
+            <br>
+            2. develop visualizations of IMF data.
+          </p>
+        </div>
+        <div class="col-lg-4 mt40">
+          <h4>Some Links</h4>
+          <p>git repo: <a href="https://github.com/Tivcrmn/Space-VT-task2-demo" target="_blank">https://github.com/Tivcrmn/Space-VT-task2-demo</a></p>
+          <p><a href="https://github.com/Tivcrmn/Space-VT-task2-demo/blob/master/IMF_DATA" target="_blank">The original IMF data from 2011 to 2017</a></p>
+          <p>Author <a href="https://github.com/Tivcrmn" target="_blank">@Tivcrmn</a> in BUPT</p>
+          <p><a href="https://drive.google.com/file/d/16hG-VSh8BJpO8yVSe4AxLBTDq-uAjWEv/view?usp=sharing" target="_blank">My CV</a></p>
+        </div>
+      </div>
+    </div>
 
-	<h1>Space@VT task2 demo by Tivcrmn</h1>
-	<h2>Analyzing Interplanetary Magnetic Field (IMF) data from OMNI. <span class="red">from 2011 to 2017</span></h2>
-	<div class="row">
-		<div class="col-lg-8">
-			<p style="width: 800px;">
-				IMF is the Sun’s magnetic field carried by the solarwind into the interplanetary space. IMF plays an important role in transferring energy into the Earth’s atmosphere and generating the northern lights (aurora). IMF data is available for download from NASA’s OMNI database.
-				<br>
-				Students can work on a variety of demo projects using IMF. 
-				<br> 
-				For example:
-				<br>
-				1. develop a real time IMF monitoring tool.
-				<br>
-				2. develop visualizations of IMF data.
-			</p>
-		</div>
-		<div class="col-lg-4">
-			<p>git repo: <a href="https://github.com/Tivcrmn/Space-VT-task2-demo" target="_blank">https://github.com/Tivcrmn/Space-VT-task2-demo</a></p>
-			<p><a href="https://github.com/Tivcrmn/Space-VT-task2-demo/blob/master/IMF_DATA" target="_blank">The original IMF data from 2011 to 2017</a></p>
-			<p>Author <a href="https://github.com/Tivcrmn" target="_blank">@Tivcrmn</a> in BUPT</p>
-			<p><a href="https://drive.google.com/file/d/16hG-VSh8BJpO8yVSe4AxLBTDq-uAjWEv/view?usp=sharing" target="_blank">My CV</a></p>
-		</div>
-	</div>
-	
-
-	<div class="app mb50">
-		<div class="row">
-			<div class="col-lg-4 pl30">
-
-				<div class="wrapForm">
-					<h5>1. Choose timeSpan and the numType</h5>
-					<div class="row">
-						<div class="col-lg-3">
-							<select name="timespan" v-model="timespan">
-								<option value="day-hour">day-hour</option>
-								<option value="month-day">month-day</option>
-								<option value="year-day">year-day</option>
-								<option value="year-month">year-month</option>
-							</select>
-						</div>
-						<div v-if="timespan !== 'day-hour'" class="col-lg-3">
-							<select name="numType" v-model="numType">
-								<option value="avg">avg</option>
-								<option value="max">max</option>
-								<option value="min">min</option>
-							</select>
-						</div>
-					</div>
-				</div>
-				
-				<div class="wrapForm">
-					<h5>2. Choose the element you want to show in canvas</h5>
-					<select name="elements" v-model="element">
-						<option value="HeliographicInertialLatitudeoftheEarth">HeliographicInertialLatitudeoftheEarth</option>
-						<option value="HeliographicInertialLongitudeoftheEarth">HeliographicInertialLongitudeoftheEarth</option>
-						<option value="BR_RTN">BR_RTN</option>
-						<option value="BT_RTN">BT_RTN</option>
-						<option value="BN_RTN">BN_RTN</option>
-						<option value="FieldMagnitudeAverage">FieldMagnitudeAverage</option>
-						<option value="BulkFlowspeed">BulkFlowspeed</option>
-						<option value="THETA">THETA</option>
-						<option value="PHI">PHI</option>
-						<option value="IONDensity">IONDensity</option>
-						<option value="Temperature">Temperature</option>
-					</select>
-				</div>
-
-				<div class="wrapForm">
-					<h5>3. Enter the time you want to compare</h5>
-					<div class="rules">
-						<h5 class="red">Input Rules:</h5>each time period should be a format string as an element in an array, and use '|' as a divider!
-						<br>
-						For example, <br>
-						<strong>if you choose day-hour as the timespan,</strong> <br>
-						<span class="blue">2017-1</span> means <span class="red">the first day in 2017</span><br>
-						<span class="blue">2017-1|2018-3</span> means <span class="red">the first day in 2017 and the third day in 2018</span><br>
-						<strong>if you choose month-day as the timespan,</strong><br>
-						<span class="blue">2017-1</span> means <span class="red">january in 2017</span><br>
-						<span class="blue">2017-1|2018-3</span> means <span class="red">january in 2017 and march in 2018</span><br>
-						<strong>if you choose year-day or year-month as the timespan,</strong><br>
-						<span class="blue">2017</span><span class="red">  means 2017 based on day or month</span><br>
-						<span class="blue">2017|2018</span><span class="red">  means 2017 and 2018 based on day or month</span><br>
-					</div>
-					
-					<input v-model="time" placeholder="please be careful about the format" class="ml10" style="width: 300px;">
-					<p class="red">The valid decimal day should between 1 to 365(2012 and 2016 is leap year so the last decimalday is 366)</p>	
-					<p class="red">The valid month should between 1 to 12</p>
-					<p class="red">The valid year should between 2011 to 2017</p>
-
-					<button @click="fetch()" class="ml60 mb10 btn">fetch</button>
-				</div>
-			</div>
-
-			<div class="col-lg-8 pr20 mb50">
-				<p v-show="loading && timespan == 'day-hour'" class="fs30">Loading.......</p>
-				<p v-show="loading && timespan == 'year-day'" class="fs30">Loading.......Retrieve the data of a year-day need more time。。。</p>
-				<div class="fs30">Line chart for <span class="gray">{{ numType }} - {{element}}</span> in {{timespan}}</div>
-				<canvas id="myChart" v-show="!loading"></canvas>
-			</div>
-		</div>
-
-	</div>
-	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-	<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.5/lodash.min.js"></script>
-	<script>
-		_u = _.noConflict(); // lets call ourselves _u
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.0"></script>
-	
-	<script src="app.js"></script>
-
-</body>
+    <div id="app"></div>
+    <script src="./dist/build.js"></script>
+  </body>
 </html>

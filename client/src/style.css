@@ -1,0 +1,64 @@
+.wrapForm {
+	background-color: #FFFFE0;
+	font-size: 12px;
+}
+.pl30 {
+	padding-left: 30px;
+}
+.ml10 {
+	margin-left: 10px;
+}
+.ml60 {
+	margin-left: 120px;
+}
+.mb10 {
+	margin-bottom: 10px;
+}
+.mb50 {
+	margin-bottom: 50px;
+}
+.mt40 {
+	margin-top: 40px;
+}
+.mt30 {
+	margin-top: 30px;
+}
+.pr20 {
+	padding-right: 20px;
+}
+.fs30 {
+	font-size: 30px;
+}
+.red {
+	color: red;
+}
+.blue {
+	color: blue;
+}
+.gray {
+	color: gray;
+}
+.rules {
+	margin: 0px 10px;
+  font-size: 12px;
+}
+p {
+	margin-bottom: 0!important
+}
+.description {
+  margin: 20px 50px;
+  padding: 20px;
+  background-color: #E6E6FA;
+}
+.content {
+  margin: 20px 50px;
+}
+.h2s {
+  margin: 10px 20px;
+}
+.message {
+  margin: 20px;
+}
+.btn {
+  margin-left: 150px!important;
+}
