@@ -133,23 +133,23 @@ npm run dev
  
     1. 2014-13 avg: 602702.54
 
- 		![](images/1-2014-13.jpg)
+ ![](images/1-2014-13.jpg)
 
     2. 2015-178 avg: 597657.125
 
- 		![](images/2-2015-178.jpg)
+ ![](images/2-2015-178.jpg)
  
     3. 2017-251 avg: 544412.75
 
- 		![](images/3-2017-251.jpg)
+ ![](images/3-2017-251.jpg)
  
     4. 2017-250 avg: 540802
 
- 		![](images/4-2017-250.jpg)
+ ![](images/4-2017-250.jpg)
  
     5. 2011-149 avg: 505466
 
- 		![](images/5-2011-149.jpg)
+ ![](images/5-2011-149.jpg)
  
  4. The hottest moment from 2011 to 2017
  
