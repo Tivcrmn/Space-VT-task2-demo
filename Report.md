@@ -23,7 +23,7 @@ The features which have been finished
 
 [Live Demo is here](http://tivarea.top/demo/client/index.html)
 
-![](http://oz2vajvam.bkt.clouddn.com/new_space_vt.png)
+![](images/new_space_vt.png)
 
 How to run?
 
@@ -41,7 +41,7 @@ npm run dev
 
 ### Tech Stacks
 
-![](http://oz2vajvam.bkt.clouddn.com/architecture.jpg)
+![](images/architecture.jpg)
 
 - [Vue (The Progressive JavaScript Framework)](https://vuejs.org/index.html)
 - [Express (Fast, unopinionated, minimalist web framework for Node.js)](http://expressjs.com/)
@@ -121,43 +121,43 @@ npm run dev
  
  1. Heliographic Inertial Latitude of the Earth  - time should be a sin or cos 
  
- ![](http://oz2vajvam.bkt.clouddn.com/sin.jpg)
+ ![](images/sin.jpg)
  
  2. Heliographic Inertial Longitude of the Earth  - time should be linear function
  
- ![](http://oz2vajvam.bkt.clouddn.com/line.jpg)
+ ![](images/line.jpg)
   
  3. The Top 5 hottest day from 2011 to 2017
   
- ![](http://oz2vajvam.bkt.clouddn.com/Line%20chart_for_avg_Temperature_in_year-day.jpg)
+ ![](images/Line%20chart_for_avg_Temperature_in_year-day.jpg)
  
     1. 2014-13 avg: 602702.54
 
- ![](http://oz2vajvam.bkt.clouddn.com/1-2014-13.jpg)
+ 		![](images/1-2014-13.jpg)
 
     2. 2015-178 avg: 597657.125
 
- ![](http://oz2vajvam.bkt.clouddn.com/2-2015-178.jpg)
+ 		![](images/2-2015-178.jpg)
  
     3. 2017-251 avg: 544412.75
 
- ![](http://oz2vajvam.bkt.clouddn.com/3-2017-251.jpg)
+ 		![](images/3-2017-251.jpg)
  
     4. 2017-250 avg: 540802
 
- ![](http://oz2vajvam.bkt.clouddn.com/4-2017-250.jpg)
+ 		![](images/4-2017-250.jpg)
  
     5. 2011-149 avg: 505466
 
- ![](http://oz2vajvam.bkt.clouddn.com/5-2011-149.jpg)
+ 		![](images/5-2011-149.jpg)
  
  4. The hottest moment from 2011 to 2017
  
  2017-251 2am 2850964 Really so hot!!!
  
- ![](http://oz2vajvam.bkt.clouddn.com/Line%20chart_for_max_Temperature_in_year-day.jpg)
+ ![](images/Line%20chart_for_max_Temperature_in_year-day.jpg)
  
- ![](http://oz2vajvam.bkt.clouddn.com/1-2017-251-2.jpg)
+ ![](images/1-2017-251-2.jpg)
  
  
 
