@@ -21,7 +21,7 @@ The features which have been finished
  - Show a certain element in the canvas in some months based on day (the number is avg, max or min of the day)
  - Show a certain element in the canvas in some years based on day or month (the number is avg, max or min of the day or month)
 
-[Live Demo is here](http://tivarea.top/demo/client/index.html)
+[Live Demo is here](http://tivarea.top/space-vt)
 
 ![](images/new_space_vt.png)
 

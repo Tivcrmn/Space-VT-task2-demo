@@ -44,7 +44,7 @@ The features which have been finished
 }
 ```
  
-[Live Demo](http://tivarea.top/demo/client/index.html)
+[Live Demo](http://tivarea.top/space-vt)
 
 ![](images/new_space_vt.png)
 
