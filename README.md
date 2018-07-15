@@ -51,3 +51,7 @@ The features which have been finished
 ### Architecture
 
 ![](images/architecture.jpg)
+
+### Finally
+
+This proposal is not selected becasue I only applied for one community and they are freshman so they only have one student allowed. :pensive: 
